@@ -2,7 +2,6 @@
 # TEST COMMANDS — Layer 1 Collectors
 # ============================================================
 # Cấu trúc thư mục thực tế:
-#   collectors_updated/
 #   └── collectors/
 #       ├── config.py
 #       ├── models.py
@@ -16,7 +15,7 @@
 #       └── github_collector.py
 #
 # Tất cả lệnh chạy từ bên trong folder collectors/:
-#   cd D:\code\collectors_updated\collectors
+#   cd src\collectors
 # ============================================================
 
 
@@ -24,7 +23,7 @@
 # 0. SETUP — chạy 1 lần trước khi test
 # ------------------------------------------------------------
 
-cd D:\code\collectors_updated\collectors
+cd src\collectors
 
 # Cài dependencies
 uv add -r requirements.txt

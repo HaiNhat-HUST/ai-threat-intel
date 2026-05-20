@@ -1,0 +1,20 @@
+# ============================================================
+# requirements.txt — Layer 1 Collectors
+# ============================================================
+
+# HTTP client — dùng trong tất cả collectors
+httpx==0.27.0
+
+# RSS/Atom feed parser — rss_collector.py
+feedparser==6.0.11
+
+# Web scraping / extract article text — rss_collector.py
+trafilatura==1.12.0
+
+# ORM + database — database/models.py
+sqlalchemy==2.0.30
+
+# HTML parsing — abusech_collector.py (BeautifulSoup đã có sẵn qua trafilatura)
+beautifulsoup4==4.12.3
+
+python-dotenv==1.0.1

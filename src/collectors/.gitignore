@@ -1,0 +1,22 @@
+.venv/
+venv/
+.env
+__pycache__/
+*.pyc
+
+# Database & Data
+*.db
+*.sqlite3
+*.jsonl
+data/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs và dữ liệu tạm
+*.log
+captures/
+
+# OS files
+.DS_Store

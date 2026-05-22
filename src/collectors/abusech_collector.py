@@ -151,7 +151,10 @@ def _collect_malwarebazaar(session, limit: int) -> int:
         md5        = sample.get("md5_hash", "")
         file_name  = sample.get("file_name", "")
         file_type  = sample.get("file_type", "")
-        malware_family = sample.get("signature", "") or sample.get("tags", [""])[0]
+        
+        tags_list  = sample.get("tags") or []
+        malware_family = sample.get("signature") or (tags_list[0] if tags_list else "")
+        
         reporter   = sample.get("reporter", "")
         tags       = ", ".join(sample.get("tags") or [])
 

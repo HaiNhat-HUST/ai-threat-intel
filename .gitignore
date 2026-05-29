@@ -216,3 +216,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ─── Project-specific (ai-threat-intel) ──────────
+# Pytest cache & ephemeral test artifacts
+.pytest_cache/
+pytest-cache-files-*/
+
+# SQLite DBs — chứa dev-generated stix_objects, không commit.
+# Baseline (chỉ có threat_articles của Hùng) commit qua *.db.sample
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+!*.db.sample
+
+# LLM provider cache (env var LLM_CACHE_DIR)
+.llm_cache/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
